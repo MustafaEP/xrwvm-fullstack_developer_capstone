@@ -1,0 +1,142 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container page-wrap">
+    <!-- Hero -->
+    <div class="page-hero mb-4">
+      <h1 class="mb-2">Contact Us</h1>
+      <p class="mb-0">
+        Questions about inventory, test drives, or financing? Reach out anytime.
+        We usually respond within <b>24 hours</b>.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Left: Contact Info -->
+      <div class="col-lg-5">
+        <div class="card info-card p-3">
+          <div class="card-body">
+            <div class="info-badge">
+              <span class="icon-circle">📍</span>
+              <span>Visit Our Showroom</span>
+            </div>
+            <p class="mb-1 fw-semibold">Best Cars Dealership</p>
+            <p class="muted mb-3">
+              1234 Auto Street, Suite 200<br>
+              Toronto, ON M5V 2T6, Canada
+            </p>
+
+            <hr>
+
+            <div class="info-badge mt-3">
+              <span class="icon-circle">📞</span>
+              <span>Call Us</span>
+            </div>
+            <p class="mb-1">
+              <a class="contact-link" href="tel:+14165550199">+1 (416) 555-0199</a>
+            </p>
+            <p class="muted mb-3">Mon–Fri: 09:00–18:00 • Sat: 10:00–16:00</p>
+
+            <hr>
+
+            <div class="info-badge mt-3">
+              <span class="icon-circle">✉️</span>
+              <span>Email</span>
+            </div>
+            <p class="mb-1">
+              Sales:
+              <a class="contact-link" href="mailto:sales@bestcars.com">sales@bestcars.com</a>
+            </p>
+            <p class="mb-0">
+              Support:
+              <a class="contact-link" href="mailto:support@bestcars.com">support@bestcars.com</a>
+            </p>
+
+            <div class="alert alert-primary mt-4 mb-0">
+              <b>Tip:</b> For faster help, include the car model name and your preferred contact time.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Simple Contact Form (visual only) -->
+      <div class="col-lg-7">
+        <div class="card form-card">
+          <div class="card-body p-4">
+            <h4 class="mb-1">Send a Message</h4>
+            <p class="muted mb-4">This form is for display purposes. (If you have a backend endpoint, we can connect it.)</p>
+
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Full Name</label>
+                  <input type="text" class="form-control" placeholder="e.g., Alex Johnson">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-control" placeholder="e.g., alex@example.com">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Phone (optional)</label>
+                  <input type="text" class="form-control" placeholder="+1 555 000 0000">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Topic</label>
+                  <select class="form-select">
+                    <option selected>Choose...</option>
+                    <option>Test Drive</option>
+                    <option>Financing</option>
+                    <option>Vehicle Availability</option>
+                    <option>Service & Support</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Message</label>
+                  <textarea class="form-control" rows="5" placeholder="Write your message..."></textarea>
+                </div>
+                <div class="col-12 d-flex gap-2">
+                  <button type="button" class="btn btn-primary px-4">Send</button>
+                  <button type="reset" class="btn btn-outline-secondary">Clear</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+        <p class="muted mt-3 mb-0">
+          Prefer WhatsApp? Add: <b>+1 (416) 555-0199</b> (Mon–Fri).
+        </p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+    
+
+</html>
