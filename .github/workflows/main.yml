@@ -63,5 +63,5 @@ jobs:
           # Lint JavaScript files in server/database directory
           find ./server/database -name "*.js" \
             -not -path "*/node_modules/*" \
-            -exec jshint --esversion=6 {} +
-          echo "JavaScript lint completed"
+            -exec jshint {} +
+          echo "JavaScript lint completed successfully"
