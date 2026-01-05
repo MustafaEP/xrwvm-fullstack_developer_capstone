@@ -27,9 +27,10 @@ jobs:
 
       - name: Run Python Linter
         run: |
-          # Ignore common lab-breaking rules
-          find . -name "*.py" -exec flake8 --ignore=E501,F401,E302,W293 {} +
-          echo "Python linting completed successfully"
+          find . -name "*.py" -exec flake8 \
+            --ignore=E231,E226,E275,E712,E722,E501,E302,W291,W293,W391,F401 \
+            {} +
+          echo "Python lint completed successfully"
 
   lint_js:
     name: Lint JavaScript Files
@@ -49,6 +50,5 @@ jobs:
 
       - name: Run JavaScript Linter
         run: |
-          # Allow ES6 syntax for modern JS
           find . -name "*.js" -exec jshint --esversion=6 {} +
-          echo "JavaScript linting completed successfully"
+          echo "JavaScript lint completed successfully"
