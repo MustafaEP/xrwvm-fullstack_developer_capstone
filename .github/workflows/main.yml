@@ -28,18 +28,12 @@ jobs:
       - name: Run Python Linter
         run: |
           # Exclude common directories that shouldn't be linted
-          find . -name "*.py" \
-            -not -path "./.git/*" \
-            -not -path "*/__pycache__/*" \
-            -not -path "*/venv/*" \
-            -not -path "*/env/*" \
-            -not -path "*/.venv/*" \
-            -not -path "*/node_modules/*" \
-            -exec flake8 \
-              --ignore=E203,E225,E226,E231,E275,E302,E303,E501,E712,E722 \
-              --ignore=W291,W292,W293,W391 \
-              --ignore=F401,F811,F841 \
-              {} +
+          flake8 \
+            --ignore=E203,E225,E226,E231,E275,E302,E303,E501,E712,E722 \
+            --ignore=W291,W292,W293,W391 \
+            --ignore=F401,F811,F841 \
+            --exclude=.git,__pycache__,venv,env,.venv,node_modules \
+            .
           echo "Python lint completed successfully"
 
   lint_js:
